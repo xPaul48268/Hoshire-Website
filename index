@@ -1,0 +1,300 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+  <meta charset="UTF-8">
+
+<style>
+h2 {
+  position: relative;
+  font-size: 9rem;
+  bottom: 120px;
+
+}
+
+html {
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+body {
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+}
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+  }
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+  background-attachment: fixed;
+}
+
+.wrapper {
+  display: inline-flex;
+  position: fixed;
+  bottom: 210;
+
+}
+
+.wrapper .icon {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 30px;
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 19px;
+  background-color: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .discord:hover,
+.wrapper .discord:hover .tooltip,
+.wrapper .discord:hover .tooltip::before {
+  background-color: #3b5999;
+  color: #ffffff;
+}
+
+.wrapper .vote:hover,
+.wrapper .vote:hover .tooltip,
+.wrapper .vote:hover .tooltip::before {
+  background-color: #91bdff;
+  color: #ffffff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background-color: #e1306c;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background-color: #de463b;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+ text-decoration: none;
+} 
+
+.one {
+  position: absolute;
+  bottom: 195px;
+  left: 0%;
+  font-size: 20px;
+  color: black;
+  border-top: 1.8px solid rgb(25, 45, 75);
+  border-left: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+  padding: 5px 8px;
+  font-family: "Calibri Light";
+  font-weight: bold
+}
+
+.two {
+  position: absolute;
+  bottom: 145px;
+  left: -5.2px;
+  font-size: 20px;
+  color: black;
+  border-top: 1.8px solid rgb(25, 45, 75);
+  border-left: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+  padding: 5px 14.5px;
+  font-family: "Calibri Light";
+  font-weight: bold
+}
+.dre {
+  position: absolute;
+  bottom: 95px;
+  left: -7px;
+  font-size: 20px;
+  color: black;
+  border-top: 1.8px solid rgb(25, 45, 75);
+  border-left: 0px;
+  border-bottom: 0px;
+  border-right: 0px;
+  background: linear-gradient(315deg, #ffffff, #d7e1ec);
+  padding: 5px 14.5px;
+  font-family: "Calibri Light";
+}
+.adsbygoogle {
+  top: 10px;
+  position: absolute;
+}
+</style>
+<head>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7764418434473140"
+  crossorigin="anonymous"></script> 
+
+<link rel="icon" href="hoshire-icon.png" type="image/x-icon">
+
+<script src="https://kit.fontawesome.com/24486e66a6.js" crossorigin="anonymous"></script>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+<h2>Hoshire</h2>
+
+
+<div class="wrapper">
+  <a href="https://discord.gg/4rM8eu423Z" target="_blank">
+  <div class="icon discord">
+    <div class="tooltip">Discord</div>
+    <span><i class="fa-brands fa-discord"></i></span>
+  </div>
+</a>
+<a href="https://www.minecraft-serverlist.net/vote/56804" target="_blank">
+  <div class="icon vote">
+    <div class="tooltip">Voting</div>
+    <span><i class="fa-solid fa-check-to-slot"></i></span>
+  </div>
+</a>
+  <a href="https://www.instagram.com/hoshire.eu/" target="_blank">
+  <div class="icon instagram">
+    <div class="tooltip">Instagram</div>
+    <span><i class="fa-brands fa-instagram"></i></span>
+  </div>
+</a>
+  <a href="https://github.com/xPaul48268" target="_blank">
+  <div class="icon github">
+    <div class="tooltip">Github</div>
+    <span><i class="fa fa-github"></i></span>
+  </div>
+</a>
+  <a href="https://www.youtube.com/channel/UCod_TgrOcnbepaiwSCsNMdg" target="_blank">
+  <div class="icon youtube">
+    <div  class="tooltip">YouTube</div>
+    <span><i class="fa-brands fa-youtube"></i></span>
+  </div>
+  </a>
+</div>
+
+<button class="one"><a href="impressum.html">Impressum</a></button>
+
+<button class="two" onclick="setTimeout(myTWO, 100);">Kontakt</button>
+
+<script>
+
+function myTWO() {
+  var newLine = "\r\n"
+  var msg = "ℋ𝑜𝓈𝒽𝒾𝓇𝑒 - 𝒞𝑜𝓃𝓉𝒶𝒸𝓉";
+  msg += newLine;
+  msg += "Discord: xPaul#0044";
+  msg += newLine;
+  msg += "Email: enterprise@hoshire.de";
+  msg += newLine;
+  msg += "Support: support@hoshire.de";
+
+  alert(msg)
+}
+
+</script>
+
+<button class="dre">↻2022</button>
+
+</head>
+<body>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7764418434473140"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7764418434473140"
+     data-ad-slot="7320158022"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</body>
+</html>
